@@ -9,6 +9,11 @@ import {
   Link,
   Image,
   Button,
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
 } from "@nextui-org/react";
 
 export default function Hero() {
@@ -24,7 +29,7 @@ export default function Hero() {
                 <p className="text-4xl max-w-[400px]">
                   Welcoming Initiatives for Senior Empowerment.
                 </p>
-                <p className="text-lg max-w-[500px] text-brand">
+                <p className="text-lg max-w-[500px] text-white">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
@@ -38,6 +43,13 @@ export default function Hero() {
             <Image src="images/seniors.jpg" width={500} isZoomed></Image>
           </div>
         </section>
+        <Modal>
+          <ModalHeader>Hello Michael</ModalHeader>
+          <ModalBody>
+            Hello MichaelHello MichaelHello MichaelHello MichaelHello
+            MichaelHello MichaelHello Michael
+          </ModalBody>
+        </Modal>
       </div>
     </>
   );
