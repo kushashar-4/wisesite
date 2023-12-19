@@ -23,7 +23,7 @@ import { useEffect } from "react";
 
 export default function Hero() {
   useEffect(() => {
-    Aos.init({ duration: 400, delay: 100 });
+    Aos.init({ duration: 600, delay: 125 });
   });
 
   return (

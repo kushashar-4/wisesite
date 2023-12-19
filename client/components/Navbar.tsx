@@ -24,7 +24,7 @@ export default function NavigationBar() {
           </a>
         </NavbarItem>
         <NavbarItem className="hover:text-brand/75 py-2 px-3 rounded-xl duration-300">
-          <a href="#" className="text-sm">
+          <a href="/programs" className="text-sm">
             Programs
           </a>
         </NavbarItem>
