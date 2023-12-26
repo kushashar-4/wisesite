@@ -13,7 +13,7 @@ export default function NavigationBar() {
   return (
     <Navbar className="bg-bgbrand p-4">
       <NavbarContent justify="start">
-        <a className="hover:scale-105 duration-300">
+        <a href="/" className="hover:scale-105 duration-300">
           <button className="font-[700] text-3xl text-brand">WISE</button>
         </a>
       </NavbarContent>

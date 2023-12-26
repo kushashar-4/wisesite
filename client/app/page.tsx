@@ -1,22 +1,9 @@
 "use client";
 
 import CardComponent from "@/components/CardComponent";
+import Footer from "@/components/Footer";
 import NavigationBar from "@/components/Navbar";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Divider,
-  Link,
-  Image,
-  Button,
-  Modal,
-  ModalContent,
-  ModalHeader,
-  ModalBody,
-  ModalFooter,
-} from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -115,6 +102,7 @@ export default function Hero() {
             data-aos="fade-left"
           ></img>
         </section>
+        <Footer></Footer>
       </div>
     </>
   );
