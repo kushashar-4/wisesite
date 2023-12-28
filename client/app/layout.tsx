@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
-
-const inter = Inter({ subsets: ["latin"] });
+import { GlobalContextProvider } from "./context/ProgramsContext";
 
 export const metadata: Metadata = {
   title: "WISE - Welcoming Initiatives for Senior Empowerment",
@@ -31,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${Uber.className} min-h-screen font-[500]`}>
-        {children}
+        <GlobalContextProvider>{children}</GlobalContextProvider>
       </body>
     </html>
   );

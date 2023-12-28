@@ -4,14 +4,13 @@ import EventCard from "@/components/EventCard";
 import Footer from "@/components/Footer";
 import NavigationBar from "@/components/Navbar";
 import { useEffect } from "react";
-import unsub from "../firebase.services";
+import { useGlobalContext } from "../context/ProgramsContext";
 
 export default function Programs() {
-  useEffect(() => {
-    let itemsArray = unsub();
+  const programsArr = useGlobalContext();
 
-    console.log(itemsArray);
-    console.log("tezt");
+  useEffect(() => {
+    console.log(programsArr);
   });
 
   return (
